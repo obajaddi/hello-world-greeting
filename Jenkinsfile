@@ -5,9 +5,9 @@ pipeline {
   }
   
   stages {
-    stage('Test unitaire'){
+    stage('Test u'){
       steps {
-            sh 'mvn -f /home/jenkins/test_maven/pom.xml test'
+        sh 'mvn -f /home/jenkins/test_maven/pom.xml test'
       }
     }
     
