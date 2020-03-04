@@ -19,7 +19,7 @@ pipeline {
     
     stage('Publication du binaire') {
       steps {
-        sh "curl -u admin:0000 --upload-file /home/jenkins/test_maven/target/test_maven-1.0-SNAPSHOT.jar 'http://10.10.20.31:8081/repository/helloworld/'"        
+        sh "curl -u admin:0000 --upload-file /home/jenkins/test_maven/target/test_maven-1.0-SNAPSHOT.jar 'http://10.10.20.31:8081/repository/helloworld/helloworld${BUILD_NUMBER}.war'"        
       }
     }
     
