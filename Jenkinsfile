@@ -7,8 +7,7 @@ pipeline {
   stages {
     stage('Test u'){
       steps {
-        sh 'mvn -f /home/jenkins/test_maven/pom.xml test'
-        sh "echo 'bonjour'" 
+        sh 'mvn test'
       }
     }
     
